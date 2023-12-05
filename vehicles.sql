@@ -10,6 +10,8 @@ CREATE TABLE vehicles (
   price NUMERIC(10, 2) NOT NULL,
   owner_id INTEGER NOT NULL REFERENCES owners);
 
+  -- ^owner_id REFERENCES owners table
+
 INSERT INTO owners (first_name)
   VALUES
     ('Bob'),
